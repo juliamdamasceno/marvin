@@ -4,4 +4,3 @@ function maiusculo (argumento){
     palavra = palavra.replace(palavra1, palavra1.toUpperCase());
     return palavra;
 }
-    console.log(maiusculo("folha"))
