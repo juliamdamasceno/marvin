@@ -1,8 +1,15 @@
 function vogalOuConsoante (letra){
-    if (letra == a || e || i || o || u){
+    if (letra == "a")
         return ("Vogal");
-    } else {
+    if (letra == "e")
+        return ("Vogal");
+    if (letra == "i")
+        return ("Vogal");
+    if (letra == "o")
+        return ("Vogal");
+    if (letra == "u")
+        return ("Vogal");
+    else {
         return ("Consoante");
     }
 }
-console.log(vogalOuConsoante("i"));
