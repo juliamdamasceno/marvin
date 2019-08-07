@@ -1,17 +1,24 @@
 function primo (num1){
     var i = 2
-    if (num1 <= 1) {
-        return "Não";
+    var primo = false
+    if (num1==2) {
+        primo = true;
+        return "Sim"
     }
+   
     while (i < num1){    
     if (num1 % i === 0){
-        return "Não";
+        primo = false;
+        break;
+        }else{
+        primo = true;
+       i++
     }
-    else {
+    }
+    if (primo){
         return "Sim";
-    }
-        i++
+    }else{
+        return "Não";
     }
 }
 
-console.log(primo(9));
